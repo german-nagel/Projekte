@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security-Bewusstsein</title>
+    <link rel="stylesheet"  href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Umfrage: Security-Bewusstsein</h1>
+            <p id="description" class="description text-center">
+                Wie hoch ist dein Sicherheitsbewusstsein in der IT?
+            </p>
+        </header>
+
+        <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+        </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="example@mail.de" required>
+        </div>
+
+        <div class="form-group">
+            <label id="number-label" for="number">Alter
+                <span class="clue">(optional)</span>
+            </label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Alter">
+        </div>
+
+        <div class="form-group">
+            <p>Aktueller Beruf</p>
+            <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Wähle deinen Beruf</option>
+            <option value="angestellter">Angestellter</option>
+            <option value="auszubildender">Auszubildender</option>
+            <option value="schueler">Schüler</option>
+            <option value="student">Student</option>
+            <option value="arbeitssuchend">Arbeitssuchend</option>
+            <option value="arbeitssuchend">Sonstige</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Wie vorsichtig bist du im Internet?</p>
+            <label>
+                <input name="user-recommend" value="gering" type="radio" class="input-radio" checked>
+                Ich mach mir keine Sorgen
+            </label>
+            <label>
+                <input name="user-recommend" value="mittel" type="radio" class="input-radio" checked>
+                Ich bin bei manchen Websiten/ Emails skeptisch
+            </label>
+            <label>
+                <input name="user-recommend" value="hoch" type="radio" class="input-radio" checked>
+                Ich bin immer sehr Aufmerksam, gefahren lauern überall!
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Denkst du, dass IT-Sicherheit ein wichtiges Thema ist?</p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+                <option disabled selected value>Triff eine Wahl</option>
+                <option value="very-important">Sehr wichtig und relevant!</option>
+                <option value="important">Wichtig und relevant</option>
+                <option value="less-important">Nicht besonders wichtig</option>
+                <option value="not-important">Unwichtig!</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>
+             Von welchen Gefahren hast du schon mal gehört?
+             <span class="clue">(Wähle aus!)</span>
+            </p>
+            <label>
+                <input name="prefer" value="trojaner" type="checkbox" class="input-checkbox">
+                Trojaner
+            </label>
+            <label>
+                <input name="prefer" value="phishing" type="checkbox" class="input-checkbox">
+                Phishing
+            </label>
+            <label>
+                <input name="prefer" value="ransomware" type="checkbox" class="input-checkbox">
+                Ransomware
+            </label>
+            <label>
+                <input name="prefer" value="spyware" type="checkbox" class="input-checkbox">
+                Spyware
+            </label>
+            <label>
+                <input name="prefer" value="würmer" type="checkbox" class="input-checkbox">
+                Würmer
+            </label>
+            <label>
+                <input name="prefer" value="ddos-angriffe" type="checkbox" class="input-checkbox">
+                DDoS-Angriffe
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>Benutzt du eine Antivirus-Software?</p>
+            <textarea id="comments" class="input-textarea" name="comments" placeholder="Ja, selbstverständlich!"></textarea>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button"> Absenden </button>
+        </div>
+     </form>
+    </div>
+</body>
+</html>
